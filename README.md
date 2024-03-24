@@ -3,5 +3,5 @@ templates to use for cp
 
 
 # ToDo
--Trie
+-Trie\n
 -2d matrix prefix sum
