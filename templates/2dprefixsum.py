@@ -11,6 +11,9 @@ Returns the 2D prefix sum on a matrix (modifies the reference)
 3 4 --> 4 10
 5 6     9 21
 
+1 2 3 --> 1  3  6
+4 5 6     5  12 21
+
 '''
 
 def matrix_prefix(mat):
