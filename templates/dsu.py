@@ -4,10 +4,10 @@ class DSU:
 
     def union(self,a,b):
         par_a = a
-        while self.arr[par_a] > 0:
+        while self.arr[par_a] >= 0:
             par_a = self.arr[par_a]
         par_b = b
-        while self.arr[par_b] > 0:
+        while self.arr[par_b] >= 0:
             par_b = self.arr[par_b]
         
         if par_a == par_b: return
@@ -21,11 +21,11 @@ class DSU:
     
     def find(self,x):
         parent = x
-        while self.arr[parent] > 0:
+        while self.arr[parent] >= 0:
             parent = self.arr[parent]
         
         compress = x
-        while self.arr[compress] > 0:
+        while self.arr[compress] >= 0:
             temp = self.arr[compress]
             self.arr[compress] = parent
             compress = temp
@@ -36,4 +36,3 @@ class DSU:
         for x in self.arr:
             if x < 0: cc += 1
         return cc
-    
