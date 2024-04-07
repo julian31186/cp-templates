@@ -9,6 +9,8 @@ class DSU:
         par_b = b
         while self.arr[par_b] > 0:
             par_b = self.arr[par_b]
+        
+        if par_a == par_b: return
 
         if abs(self.arr[par_a]) > abs(self.arr[par_b]):
             self.arr[par_a] += self.arr[par_b]
